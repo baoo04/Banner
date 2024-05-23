@@ -2,8 +2,9 @@
 
 import { FluentList } from "@/assets/icons";
 import { cn } from "@/config/utils";
+import { useIsPc } from "@/hooks/useMediaQuery";
 import Link from "next/link";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 interface HeaderNavProps {
   menus: { name: string; link: string; icon?: ReactNode }[];
@@ -11,6 +12,13 @@ interface HeaderNavProps {
 
 const HeaderNav = ({ menus }: HeaderNavProps) => {
   const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
+  const isPc = useIsPc();
+
+  useEffect(() => {
+    if (isPc) {
+      setIsOpenNavMenu(false);
+    }
+  }, [isPc]);
 
   return (
     <div>

@@ -40,7 +40,7 @@ const menus = [
 
 const Header = () => {
   return (
-    <header className="fixed1 w-full">
+    <header>
       <div className="bg-primary-900 text-white py-4 top-0 z-10 xl:block hidden">
         <div className="flex justify-between items-center">
           <div className="w-4/5 mx-auto flex justify-between">
@@ -108,7 +108,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <div className="bg-white xl:hidden flex px-3 py-3 justify-between items-center">
+      <div className="bg-white xl:hidden flex px-6 py-3 justify-between items-center">
         <HeaderNav menus={menus} />
         <Link href="#">
           <LogoFurniture />
