@@ -17,7 +17,7 @@ import ChevronDown from "@/components/icons/ChevronDown";
 import DownAngle from "@/components/icons/DownAngle";
 import Envelope from "@/components/icons/Envelope";
 import Eye from "@/components/icons/Eye";
-import EyeInvisible from "@/components/icons/EyeinVisible";
+import EyeInvisible from "@/components/icons/EyeInvisible";
 import Favorite from "@/components/icons/Favorite";
 import FluentList from "@/components/icons/FluentList";
 import Google from "@/components/icons/Google";
@@ -41,22 +41,22 @@ export default function UIKits() {
     <>
       <main className={cn("mx-10 mt-10 mb-20 space-y-4")}>
         <div className="flex bg-primary-100 flex-col">
-        <Search className="w-12 h-12" viewBox="0 0 18 18"/>
-        <Phone className="w-10 h-10" fill="black"/>
-        <CartPlus className="w-5 h-5"/>
-        <CartShopping />
-        <ChevronDown className="w-10 h-10" viewBox="0 0 18 18"/>
-        <DownAngle className="w-10 h-10" viewBox="0 0 16 16"/>
-        <Envelope />
-        <Eye className="w-10 h-10"/>
-        <EyeInvisible />
-        <Favorite className="w-10 h-10" fill="red"/>
-        <FluentList className="w-15 h-15"/>
-        <Google className="w-8 h-8" viewBox="0 0 18 18"/>
-        <User className="w-10 h-10" fill="red"/>
-        <Xmark className="w-5 h-5"/>
-        <RoundedUser/>
-        <LogoFurniture  className="w-50 h-20"/>
+        <Search className="w-10 h-10 text-dark-300"/>
+        <Phone className=" text-primary-600" />
+        <CartPlus className=" text-dark-600" />
+        <CartShopping className=" text-dark-500" />
+        <ChevronDown className=" text-primary-600" />
+        <DownAngle className=" text-primary-600" />
+        <Envelope className=" text-primary-600" />
+        <Eye className=" text-primary-600" />
+        <EyeInvisible className="w-10 h-10 text-primary-600" />
+        <Favorite className=" text-dark-200" />
+        <FluentList className=" text-primary-600" />
+        <Google className=" text-primary-600" />
+        <User className=" text-primary-600" />
+        <Xmark className=" text-primary-600" />
+        <RoundedUser className=" text-primary-600" />
+        <LogoFurniture className=" text-primary-600" />
         <Twitter/>
         <Facebook/>
         </div>
