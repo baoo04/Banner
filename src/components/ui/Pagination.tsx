@@ -1,9 +1,8 @@
 import { memo, FC, Fragment, useMemo } from "react";
 import { cn } from "@/config/utils";
-import  ChevronDown  from "@/assets/icons/ChevronDown";
+import ChevronDown from "@/assets/icons/ChevronDown";
 import Button from "./Button";
-import { useWindowSize } from "@/hooks";
-import { MD } from "@/constants";
+import { useIsTablet } from "@/hooks/useMediaQuery";
 
 type PaginationProps = {
   total: number;
@@ -26,16 +25,16 @@ const Pagination: FC<PaginationProps> = ({
   className,
   numberPage,
 }) => {
-  const [width] = useWindowSize();
+  const isTablet = useIsTablet();
   const { totalPages, pages } = useMemo(
     () =>
       getPageInfo(
         total,
         currentPage,
         pageSize,
-        numberPage || width < MD ? 3 : PAGINATION_SIZE
+        numberPage || isTablet ? 3 : PAGINATION_SIZE
       ),
-    [total, currentPage, pageSize, numberPage, width]
+    [total, currentPage, pageSize, numberPage, isTablet]
   );
 
   const isDisableButtonLeft = currentPage <= 1;
