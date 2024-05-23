@@ -1,13 +1,32 @@
 "use client";
 
-import CartPlus from "@/assets/icons/CartPlus";
-import Search from "@/assets/icons/Search";
+// import CartPlus from "@/assets/icons/CartPlus";
+// import Search from "@/assets/icons/Search";
 import Input from "@/components/ui/Input";
 import { cn } from "@/config/utils";
 import Button from "@/components/ui/Button";
 import Dropdown from "@/components/ui/Dropdown";
 import { useState } from "react";
 import Pagination from "@/components/ui/Pagination";
+
+import Search from "@/components/icons/Search";
+import Phone from "@/components/icons/Phone";
+import CartPlus from "@/components/icons/CartPlus";
+import CartShopping from "@/components/icons/CartShopping";
+import ChevronDown from "@/components/icons/ChevronDown";
+import DownAngle from "@/components/icons/DownAngle";
+import Envelope from "@/components/icons/Envelope";
+import Eye from "@/components/icons/Eye";
+import EyeInvisible from "@/components/icons/EyeinVisible";
+import Favorite from "@/components/icons/Favorite";
+import FluentList from "@/components/icons/FluentList";
+import Google from "@/components/icons/Google";
+import User from "@/components/icons/User";
+import Xmark from "@/components/icons/Xmark";
+import RoundedUser from "@/components/icons/RoundedUser";
+import LogoFurniture from "@/components/icons/LogoFurniture";
+import Twitter from "@/components/icons/Twitter";
+import Facebook from "@/components/icons/Facebook";
 
 export default function UIKits() {
   const [selectedItem, setSelectedItem] = useState("");
@@ -21,6 +40,27 @@ export default function UIKits() {
   return (
     <>
       <main className={cn("mx-10 mt-10 mb-20 space-y-4")}>
+        <div className="flex bg-primary-100 flex-col">
+        <Search className="w-12 h-12" viewBox="0 0 18 18"/>
+        <Phone className="w-10 h-10" fill="black"/>
+        <CartPlus className="w-5 h-5"/>
+        <CartShopping />
+        <ChevronDown className="w-10 h-10" viewBox="0 0 18 18"/>
+        <DownAngle className="w-10 h-10" viewBox="0 0 16 16"/>
+        <Envelope />
+        <Eye className="w-10 h-10"/>
+        <EyeInvisible />
+        <Favorite className="w-10 h-10" fill="red"/>
+        <FluentList className="w-15 h-15"/>
+        <Google className="w-8 h-8" viewBox="0 0 18 18"/>
+        <User className="w-10 h-10" fill="red"/>
+        <Xmark className="w-5 h-5"/>
+        <RoundedUser/>
+        <LogoFurniture  className="w-50 h-20"/>
+        <Twitter/>
+        <Facebook/>
+        </div>
+
         <h1>Buttons</h1>
         <div className="space-x-2">
           <Button
