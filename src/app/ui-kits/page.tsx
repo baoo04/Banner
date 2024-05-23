@@ -1,32 +1,13 @@
 "use client";
 
-// import CartPlus from "@/assets/icons/CartPlus";
-// import Search from "@/assets/icons/Search";
+import Search from "@/components/icons/Search";
+import CartPlus from "@/components/icons/CartPlus";
 import Input from "@/components/ui/Input";
 import { cn } from "@/config/utils";
 import Button from "@/components/ui/Button";
 import Dropdown from "@/components/ui/Dropdown";
 import { useState } from "react";
 import Pagination from "@/components/ui/Pagination";
-
-import Search from "@/components/icons/Search";
-import Phone from "@/components/icons/Phone";
-import CartPlus from "@/components/icons/CartPlus";
-import CartShopping from "@/components/icons/CartShopping";
-import ChevronDown from "@/components/icons/ChevronDown";
-import DownAngle from "@/components/icons/DownAngle";
-import Envelope from "@/components/icons/Envelope";
-import Eye from "@/components/icons/Eye";
-import EyeInvisible from "@/components/icons/EyeInvisible";
-import Favorite from "@/components/icons/Favorite";
-import FluentList from "@/components/icons/FluentList";
-import Google from "@/components/icons/Google";
-import User from "@/components/icons/User";
-import Xmark from "@/components/icons/Xmark";
-import RoundedUser from "@/components/icons/RoundedUser";
-import LogoFurniture from "@/components/icons/LogoFurniture";
-import Twitter from "@/components/icons/Twitter";
-import Facebook from "@/components/icons/Facebook";
 
 export default function UIKits() {
   const [selectedItem, setSelectedItem] = useState("");
@@ -39,27 +20,6 @@ export default function UIKits() {
   return (
     <>
       <main className={cn("mx-10 mt-10 mb-20 space-y-4")}>
-        <div className="flex bg-primary-100 flex-col">
-        <Search className="w-10 h-10 text-dark-300"/>
-        <Phone className=" text-primary-600" />
-        <CartPlus className=" text-dark-600" />
-        <CartShopping className=" text-dark-500" />
-        <ChevronDown className=" text-primary-600" />
-        <DownAngle className=" text-primary-600" />
-        <Envelope className=" text-primary-600" />
-        <Eye className=" text-primary-600" />
-        <EyeInvisible className="w-10 h-10 text-primary-600" />
-        <Favorite className=" text-dark-200" />
-        <FluentList className=" text-primary-600" />
-        <Google className=" text-primary-600" />
-        <User className=" text-primary-600" />
-        <Xmark className=" text-primary-600" />
-        <RoundedUser className=" text-primary-600" />
-        <LogoFurniture className=" text-primary-600" />
-        <Twitter/>
-        <Facebook/>
-        </div>
-
         <h1>Buttons</h1>
         <div className="space-x-2">
           <Button
@@ -86,16 +46,16 @@ export default function UIKits() {
           type="text"
           placeholder="Outlined Input"
           error="Sample error"
-          icon={<Search />}
+          icon={<Search className="text-primary-600"/>}
         />
-        <Input type="text" placeholder="Outlined Input" icon={<Search />} />
+        <Input type="text" placeholder="Outlined Input" icon={<Search className="text-primary-600"/>} />
         <Input type="text" disabled placeholder="Disabled Input" />
         <Input
           type="text"
           variant={"standard"}
           placeholder="Standard Input"
           error="Sample error"
-          icon={<Search />}
+          icon={<Search className="text-primary-600"/>}
         />
         <Input type="text" variant={"filled"} placeholder="Filled Input" />
 

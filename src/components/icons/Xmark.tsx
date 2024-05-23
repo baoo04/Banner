@@ -1,7 +1,7 @@
 import SvgIcon from "../ui/SvgIcon";
 
-const Xmark = ({...rest}) => (
-    <SvgIcon {...rest} name="xmark" width="14" height="14"/>
+const XMark = ({...rest}) => (
+    <SvgIcon {...rest} name="x-mark" width="14" height="14"/>
 )
 
-export default Xmark;
+export default XMark;
