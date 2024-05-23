@@ -33,7 +33,6 @@ export default function UIKits() {
   const [page, setPage] = useState(1);
 
   const onPaginationChange = (currentPage: number) => {
-    console.log(currentPage);
     setPage(currentPage);
   };
 
