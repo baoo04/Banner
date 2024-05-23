@@ -41,7 +41,7 @@ export default function UIKits() {
     <>
       <main className={cn("mx-10 mt-10 mb-20 space-y-4")}>
         <div className="flex bg-primary-100 flex-col">
-        <Search className="w-12 h-12" viewBox="0 0 18 18"/>
+        <Search className="w-8 h-8 text-primary"/>
         <Phone className="w-10 h-10" fill="black"/>
         <CartPlus className="w-5 h-5"/>
         <CartShopping />
