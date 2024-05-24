@@ -4,7 +4,7 @@ import { ChangeEvent, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/config/utils";
 import Input from "@/components/ui/Input";
-import { Eye, EyeInvisible, Google } from "@/components/icons/index"
+import { Eye, EyeInvisible, Google } from "@/components/icons"
 import ToggleButton from "@/components/ui/ToggleButton";
 import Button from "@/components/ui/Button";
 import { PATH } from "@/constants/paths";

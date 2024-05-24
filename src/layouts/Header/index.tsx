@@ -12,7 +12,7 @@ import {
   RoundedUser,
   LogoFurniture,
   Instagram
-} from "@/components/icons/";
+} from "@/components/icons";
 
 import HeaderNav from "./HeaderNav";
 

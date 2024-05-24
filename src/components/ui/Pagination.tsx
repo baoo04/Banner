@@ -1,6 +1,6 @@
 import { memo, FC, Fragment, useMemo } from "react";
 import { cn } from "@/config/utils";
-import { ChevronDown } from "@/components/icons/index"
+import { ChevronDown } from "@/components/icons"
 import Button from "./Button";
 import { useIsTablet } from "@/hooks/useMediaQuery";
 

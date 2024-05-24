@@ -2,7 +2,7 @@ import React from "react";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
-import { LogoFurniture, Eye, Instagram } from "@/components/icons/index"
+import { LogoFurniture, Eye, Instagram } from "@/components/icons"
 
 const aboutCategories = [
   { name: "Trang chủ", link: "#" },
@@ -52,7 +52,7 @@ const Footer = () => {
               <div className="flex gap-3 items-center">
                 <Eye />
                 <Eye />
-                <Eye /> 
+                <Eye />
               </div>
             </div>
           </div>
