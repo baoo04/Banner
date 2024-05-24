@@ -33,5 +33,5 @@ export {
   Search,
   User,
   XMark,
-  Instagram
+  Instagram,
 };

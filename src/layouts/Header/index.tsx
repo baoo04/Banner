@@ -11,7 +11,7 @@ import {
   DownAngle,
   RoundedUser,
   LogoFurniture,
-  Instagram
+  Instagram,
 } from "@/components/icons";
 
 import HeaderNav from "./HeaderNav";
@@ -92,7 +92,7 @@ const Header = () => {
             variant={"standard"}
             placeholder="Tìm kiếm sản phẩm"
             error=""
-            icon={<Search className="text-primary-900"/>}
+            icon={<Search className="text-primary-900" />}
             className="w-[200px] xxl:w-[300px]"
           />
           <div className="flex gap-5 items-center">
@@ -100,24 +100,24 @@ const Header = () => {
               <Favorite fill="none" className="text-white w-6 h-6" />
               <span className="text-primary-900">Đã lưu</span>
             </Link>
-              <Link className="flex flex-col items-center" href="#">
-                <CartShopping className="text-primary-200"/>
-                <span className="text-primary-900">Giỏ hàng</span>
-              </Link>
-            </div>
+            <Link className="flex flex-col items-center" href="#">
+              <CartShopping className="text-primary-200" />
+              <span className="text-primary-900">Giỏ hàng</span>
+            </Link>
+          </div>
         </nav>
       </div>
 
       <div className="bg-white xl:hidden flex px-6 py-3 justify-between items-center">
         <HeaderNav menus={menus} />
         <Link href="#">
-          <LogoFurniture className="text-primary-600"/>
+          <LogoFurniture className="text-primary-600" />
         </Link>
         <div className="flex gap-2">
           <Link href="#">
-            <CartShopping className="text-white-900" fill="none"/>
+            <CartShopping className="text-white-900" fill="none" />
           </Link>
-          <RoundedUser className="text-white-900"/>
+          <RoundedUser className="text-white-900" />
         </div>
       </div>
     </header>

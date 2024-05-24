@@ -1,6 +1,6 @@
 "use client";
 
-import { FluentList } from "@/components/icons"
+import { FluentList } from "@/components/icons";
 import { cn } from "@/config/utils";
 import { useIsPc } from "@/hooks/useMediaQuery";
 import Link from "next/link";
