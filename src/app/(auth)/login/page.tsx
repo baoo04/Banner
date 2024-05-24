@@ -4,10 +4,8 @@ import { ChangeEvent, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/config/utils";
 import Input from "@/components/ui/Input";
-import { Eye } from "@/assets/icons/Eye";
-import { EyeInvisible } from "@/assets/icons/EyeInvisible";
+import { Eye, EyeInvisible, Google } from "@/components/icons";
 import ToggleButton from "@/components/ui/ToggleButton";
-import { Google } from "@/assets/icons/Google";
 import Button from "@/components/ui/Button";
 import { PATH } from "@/constants/paths";
 
@@ -45,11 +43,7 @@ const Login = () => {
               className="cursor-pointer text-dark-300 select-none"
               onClick={() => setIsShowPassword(!isShowPassword)}
             >
-              {isShowPassword ? (
-                <EyeInvisible className="w-5 h-5" />
-              ) : (
-                <Eye className="w-5 h-5" />
-              )}
+              {isShowPassword ? <EyeInvisible /> : <Eye />}
             </div>
           }
           onChange={handleChangeAccount}
@@ -57,11 +51,12 @@ const Login = () => {
       </div>
 
       <div className="flex items-center mx-auto my-2">
-        <ToggleButton
-          onClick={setIsRememberAccount}
-        />
+        <ToggleButton onClick={setIsRememberAccount} />
         <span
-          className={cn("text-sm ml-2", isRememberAccount ? "text-primary-900" : "text-dark-400")}
+          className={cn(
+            "text-sm ml-2",
+            isRememberAccount ? "text-primary-900" : "text-dark-400"
+          )}
         >
           Lưu đăng nhập
         </span>

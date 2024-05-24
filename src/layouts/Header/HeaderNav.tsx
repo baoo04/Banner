@@ -1,6 +1,6 @@
 "use client";
 
-import { FluentList } from "@/assets/icons";
+import { FluentList } from "@/components/icons";
 import { cn } from "@/config/utils";
 import { useIsPc } from "@/hooks/useMediaQuery";
 import Link from "next/link";
@@ -26,7 +26,7 @@ const HeaderNav = ({ menus }: HeaderNavProps) => {
         onClick={() => {
           setIsOpenNavMenu(!isOpenNavMenu);
         }}
-        className="cursor-pointer relative"
+        className="text-primary-600 relative"
       />
       <div
         className={cn(

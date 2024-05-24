@@ -1,9 +1,8 @@
 import React from "react";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
-import { Facebook, Instagram, Twitter } from "@/assets/icons";
 import Link from "next/link";
-import { LogoFurniture } from "@/assets/icons";
+import { LogoFurniture, Eye, Instagram } from "@/components/icons";
 
 const aboutCategories = [
   { name: "Trang chủ", link: "#" },
@@ -51,18 +50,16 @@ const Footer = () => {
             <div>
               <p className="pb-2">Theo dõi chúng tôi tại</p>
               <div className="flex gap-3 items-center">
-                <Facebook />
-                <Instagram />
-                <Twitter />
+                <Eye />
+                <Eye />
+                <Eye />
               </div>
             </div>
           </div>
 
           <div className="flex flex-col gap-5 md:gap-14 md:flex-row md:items-start">
             <div>
-              <div className="font-medium text-base pb-5">
-                Về chúng tôi
-              </div>
+              <div className="font-medium text-base pb-5">Về chúng tôi</div>
 
               <div className="flex flex-col gap-3 text-primary-900">
                 {aboutCategories.map((category, index) => (

@@ -1,7 +1,6 @@
 "use client";
 
-import CartPlus from "@/assets/icons/CartPlus";
-import Search from "@/assets/icons/Search";
+import { Search, CartPlus } from "@/components/icons";
 import Input from "@/components/ui/Input";
 import { cn } from "@/config/utils";
 import Button from "@/components/ui/Button";
@@ -14,7 +13,6 @@ export default function UIKits() {
   const [page, setPage] = useState(1);
 
   const onPaginationChange = (currentPage: number) => {
-    console.log(currentPage);
     setPage(currentPage);
   };
 
@@ -47,16 +45,20 @@ export default function UIKits() {
           type="text"
           placeholder="Outlined Input"
           error="Sample error"
-          icon={<Search />}
+          icon={<Search className="text-primary-600" />}
         />
-        <Input type="text" placeholder="Outlined Input" icon={<Search />} />
+        <Input
+          type="text"
+          placeholder="Outlined Input"
+          icon={<Search className="text-primary-600" />}
+        />
         <Input type="text" disabled placeholder="Disabled Input" />
         <Input
           type="text"
           variant={"standard"}
           placeholder="Standard Input"
           error="Sample error"
-          icon={<Search />}
+          icon={<Search className="text-primary-600" />}
         />
         <Input type="text" variant={"filled"} placeholder="Filled Input" />
 
