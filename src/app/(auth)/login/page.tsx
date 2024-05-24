@@ -4,10 +4,8 @@ import { ChangeEvent, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/config/utils";
 import Input from "@/components/ui/Input";
-import { Eye } from "@/assets/icons/Eye";
-import { EyeInvisible } from "@/assets/icons/EyeInvisible";
+import { Eye, EyeInvisible, Google } from "@/components/icons/index"
 import ToggleButton from "@/components/ui/ToggleButton";
-import { Google } from "@/assets/icons/Google";
 import Button from "@/components/ui/Button";
 import { PATH } from "@/constants/paths";
 
@@ -46,9 +44,9 @@ const Login = () => {
               onClick={() => setIsShowPassword(!isShowPassword)}
             >
               {isShowPassword ? (
-                <EyeInvisible className="w-5 h-5" />
+                <EyeInvisible />
               ) : (
-                <Eye className="w-5 h-5" />
+                <Eye />
               )}
             </div>
           }

@@ -1,9 +1,8 @@
 import React from "react";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
-import { Facebook, Instagram, Twitter } from "@/assets/icons";
 import Link from "next/link";
-import { LogoFurniture } from "@/assets/icons";
+import { LogoFurniture, Eye, Instagram } from "@/components/icons/index"
 
 const aboutCategories = [
   { name: "Trang chủ", link: "#" },
@@ -51,9 +50,9 @@ const Footer = () => {
             <div>
               <p className="pb-2">Theo dõi chúng tôi tại</p>
               <div className="flex gap-3 items-center">
-                <Facebook />
-                <Instagram />
-                <Twitter />
+                <Eye />
+                <Eye />
+                <Eye /> 
               </div>
             </div>
           </div>
