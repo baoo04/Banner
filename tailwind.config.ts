@@ -62,24 +62,28 @@ const config: Config = {
       keyframes: {
         fadeInDown: {
           "0%": {
-            top: "50%",
+            transform: "translateY(-100%)",
             opacity: "0",
           },
           "100%": {
-            top: "100%",
+            transform: "translateY(0)",
             opacity: "1",
           },
         },
         fadeInUp: {
           "0%": {
-            bottom: "50%",
+            transform: "translateY(100%)",
             opacity: "0",
           },
           "100%": {
-            bottom: "100%",
+            transform: "translateY(0)",
             opacity: "1",
           },
-        },
+        }
+      },
+      animation: {
+        fadeInDown: "fadeInDown 0.5s ease-in-out",
+        fadeInUp: "fadeInUp 0.5s ease-in-out",
       },
     },
   },

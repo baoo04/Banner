@@ -2,7 +2,7 @@ import React from "react";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
-import { LogoFurniture, Eye, Instagram } from "@/components/icons"
+import { LogoFurniture, Eye, Instagram, Facebook, Twitter } from "@/components/icons"
 
 const aboutCategories = [
   { name: "Trang chủ", link: "#" },
@@ -22,8 +22,8 @@ const customerSupportCategories = [
 const Footer = () => {
   return (
     <footer className="bg-primary-100">
-      <div className="py-5 px-6">
-        <div className="xl:w-4/5 justify-center xl:justify-start flex xl:mx-auto xl:gap-40 xl:flex-row gap-8 flex-col">
+      <div className="py-5">
+        <div className="flex flex-col gap-8 pl-6 xl:pl-0 xl:mx-auto xl:gap-40 xl:flex-row xl:w-4/5">
           <div className="flex items-start flex-col gap-5">
             <Link href="#">
               <LogoFurniture />
@@ -50,16 +50,24 @@ const Footer = () => {
             <div>
               <p className="pb-2">Theo dõi chúng tôi tại</p>
               <div className="flex gap-3 items-center">
-                <Eye />
-                <Eye />
-                <Eye />
+                <Link href="">
+                  <Facebook />
+                </Link>
+
+                <Link href="">
+                  <Instagram />
+                </Link>
+                
+                <Link href="">
+                  <Twitter />
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col gap-5 md:gap-14 md:flex-row md:items-start">
             <div>
-              <div className="font-medium text-base pb-5">
+              <div className="font-medium text-base pb-2 xl:pb-5">
                 Về chúng tôi
               </div>
 
@@ -72,7 +80,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="font-medium text-base pb-5">
+              <div className="font-medium text-base pb-2 xl:pb-5">
                 Hỗ trợ khách hàng
               </div>
 

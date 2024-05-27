@@ -2,8 +2,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 * {
   border: none;
+}
+
+.container-17{
+  width: 80%;
+  margin: 0 auto;
 }
 
 @layer utilities {
