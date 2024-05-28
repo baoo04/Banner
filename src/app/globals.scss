@@ -8,13 +8,23 @@ body {
 }
 
 .container-80{
-  @media (min-width: 1280px) and (max-width: 1349px) {
-    width: 1024px;
+  @media (min-width: 1900px) {
+    width: 1550px;
     margin: 0 auto;
   }
 
-  @media (min-width: 1350px) {
-    width: 1280px;
+  @media (min-width: 1650px) and (max-width: 1899px) {
+    width: 1384px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1650px) {
+    width: 1135px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1399px) {
+    width: 1024px;
     margin: 0 auto;
   }
 
@@ -23,7 +33,7 @@ body {
   }
 }
 
-@keyframes expandHeight {
+@keyframes fadeUp {
   from {
     max-height: 0;
   }
@@ -32,7 +42,7 @@ body {
   }
 }
 
-@keyframes shrinkHeight {
+@keyframes fadeDown {
   from {
     max-height: 250px;
   }
@@ -41,15 +51,13 @@ body {
   }
 }
 
-.shrink-height {
-  animation: shrinkHeight 0.5s ease-in-out forwards;
+.fade-down {
+  animation: fadeDown 0.5s ease-in-out forwards;
 }
 
-.expand-height {
-  animation: expandHeight 0.5s ease-in-out forwards;
+.fade-up {
+  animation: fadeUp 0.5s ease-in-out forwards;
 }
-
-
 
 @layer utilities {
   .text-balance {

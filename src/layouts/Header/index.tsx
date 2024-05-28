@@ -95,7 +95,7 @@ const Header = () => {
             placeholder="Tìm kiếm sản phẩm"
             error=""
             icon={<Search className="text-primary-900" />}
-            className="w-[200px] xxl:w-[300px]"
+            className="xl:w-[230px] xxl:w-[320px]"
           />
 
           <div className="flex gap-5 items-center">
@@ -112,7 +112,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="bg-white xl:hidden container-80 flex py-3 justify-between items-center">
+      <div className="bg-white container-80 flex py-3 justify-between items-center xl:hidden">
         <HeaderNav menus={menus} />
 
         <Link href="#">
