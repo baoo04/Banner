@@ -26,7 +26,7 @@ const HeaderNav = ({ menus }: HeaderNavProps) => {
         onClick={() => {
           setIsOpenNavMenu(!isOpenNavMenu);
         }}
-        className={cn("text-primary-600 relative select-none", isOpenNavMenu ? "animate-bounce" : "")}
+        className={cn("text-primary-600 relative select-none")}
       />
 
       <div

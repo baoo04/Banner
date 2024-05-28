@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary-100">
       <div className="py-5">
-        <div className="flex flex-col gap-8 pl-6 xl:pl-0 xl:mx-auto xl:gap-40 xl:flex-row xl:w-4/5">
+        <div className="flex flex-col gap-8 xl:gap-40 container-80 xl:flex-row">
           <div className="flex items-start flex-col gap-5">
             <Link href="#">
               <LogoFurniture />

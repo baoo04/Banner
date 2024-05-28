@@ -8,23 +8,33 @@ body {
 }
 
 .container-80{
-  width: 80%;
-  margin: 0 auto;
-}
+  @media (min-width: 1280px) and (max-width: 1349px) {
+    width: 1024px;
+    margin: 0 auto;
+  }
 
+  @media (min-width: 1350px) {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1279px) {
+    padding: 0 20px;
+  }
+}
 
 @keyframes expandHeight {
   from {
     max-height: 0;
   }
   to {
-    max-height: 300px;
+    max-height: 250px;
   }
 }
 
 @keyframes shrinkHeight {
   from {
-    max-height: 300px;
+    max-height: 250px;
   }
   to {
     max-height: 0;
@@ -32,11 +42,11 @@ body {
 }
 
 .shrink-height {
-  animation: shrinkHeight 0.7s ease-in-out forwards;
+  animation: shrinkHeight 0.5s ease-in-out forwards;
 }
 
 .expand-height {
-  animation: expandHeight 0.7s ease-in-out forwards;
+  animation: expandHeight 0.5s ease-in-out forwards;
 }
 
 

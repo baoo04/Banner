@@ -70,8 +70,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="hidden py-2 bg-white xl:block">
-        <nav className="md:w-4/5 px-3 lg:px-0 mx-auto flex justify-between items-center">
+      <div className="hidden py-2 bg-white xl:block container-80" >
+        <div className="flex justify-between items-center">
           <Link href="#">
             <LogoFurniture />
           </Link>
@@ -109,10 +109,10 @@ const Header = () => {
               <span className="text-primary-900 mt-1">Giỏ hàng</span>
             </Link>
           </div>
-        </nav>
+        </div>
       </div>
 
-      <div className="bg-white xl:hidden flex px-6 py-3 justify-between items-center">
+      <div className="bg-white xl:hidden container-80 flex py-3 justify-between items-center">
         <HeaderNav menus={menus} />
 
         <Link href="#">
@@ -121,9 +121,9 @@ const Header = () => {
 
         <div className="flex gap-2">
           <Link href="#">
-            <CartShopping className="text-white-900" fill="none" />
+            <CartShopping className="text-white-900 w-6 h-6" fill="none" />
           </Link>
-          <RoundedUser className="text-white-900 w-7 h-7" />
+          <RoundedUser className="text-white-900 w-6 h-6 ml-2 mt-0" />
         </div>
       </div>
     </header>
