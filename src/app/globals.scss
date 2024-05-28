@@ -7,10 +7,39 @@ body {
   border: none;
 }
 
-.container-17{
+.container-80{
   width: 80%;
   margin: 0 auto;
 }
+
+
+@keyframes expandHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 300px;
+  }
+}
+
+@keyframes shrinkHeight {
+  from {
+    max-height: 300px;
+  }
+  to {
+    max-height: 0;
+  }
+}
+
+.shrink-height {
+  animation: shrinkHeight 0.7s ease-in-out forwards;
+}
+
+.expand-height {
+  animation: expandHeight 0.7s ease-in-out forwards;
+}
+
+
 
 @layer utilities {
   .text-balance {

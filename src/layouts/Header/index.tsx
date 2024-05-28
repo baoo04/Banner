@@ -43,7 +43,7 @@ const Header = () => {
     <header>
       <div className="bg-primary-900 text-white py-4 top-0 z-10 xl:block hidden">
         <div className="flex justify-between items-center">
-          <div className="container-17 flex justify-between">
+          <div className="container-80 flex justify-between">
             <div className="flex gap-20 items-center">
               <Link href="#" className="text-sm flex gap-1 items-center">
                 <Envelope /> Ecommerce@gmail.com

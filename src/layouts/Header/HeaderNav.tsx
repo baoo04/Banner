@@ -31,10 +31,8 @@ const HeaderNav = ({ menus }: HeaderNavProps) => {
 
       <div
         className={cn(
-          "transition-all duration-500 ease-in-out overflow-hidden xl:hidden absolute z-50 shadow-2xl bg-white w-[95%] top-10 mx-auto left-0 right-0",
-          isOpenNavMenu
-            ? " left-0 opacity-100 shadow-lg rounded-lg animate-fadeInUp"
-            : "hidden"
+          "transition-all duration-500 ease-in-out overflow-hidden xl:hidden absolute z-50 shadow-2xl bg-white w-[95%] top-10 mx-auto left-0 right-0 rounded-lg",
+          isOpenNavMenu ? "expand-height" : "shrink-height",
         )}
       >
         {menus.map((item, index) => (
