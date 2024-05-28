@@ -2,7 +2,7 @@ import React from "react";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
-import { LogoFurniture, Eye, Instagram, Facebook, Twitter } from "@/components/icons"
+import { LogoFurniture, Instagram, Facebook, Twitter } from "@/components/icons"
 
 const aboutCategories = [
   { name: "Trang chủ", link: "#" },

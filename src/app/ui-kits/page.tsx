@@ -1,12 +1,13 @@
 "use client";
 
-import { Search, CartPlus} from "@/components/icons"
+import { Search, CartPlus } from "@/components/icons";
 import Input from "@/components/ui/Input";
 import { cn } from "@/config/utils";
 import Button from "@/components/ui/Button";
 import Dropdown from "@/components/ui/Dropdown";
 import { useState } from "react";
 import Pagination from "@/components/ui/Pagination";
+import Image from "next/image";
 
 export default function UIKits() {
   const [selectedItem, setSelectedItem] = useState("");
@@ -40,21 +41,33 @@ export default function UIKits() {
           </Button>
         </div>
 
+        <Image
+          priority={false}
+          alt=""
+          width={1000} // a fixed value for max-width
+          height={500} // whatever
+          src="https://images.unsplash.com/photo-1653832919710-348081cb9e87?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+
         <h1>Inputs</h1>
         <Input
           type="text"
           placeholder="Outlined Input"
           error="Sample error"
-          icon={<Search className="text-primary-600"/>}
+          icon={<Search className="text-primary-600" />}
         />
-        <Input type="text" placeholder="Outlined Input" icon={<Search className="text-primary-600"/>} />
+        <Input
+          type="text"
+          placeholder="Outlined Input"
+          icon={<Search className="text-primary-600" />}
+        />
         <Input type="text" disabled placeholder="Disabled Input" />
         <Input
           type="text"
           variant={"standard"}
           placeholder="Standard Input"
           error="Sample error"
-          icon={<Search className="text-primary-600"/>}
+          icon={<Search className="text-primary-600" />}
         />
         <Input type="text" variant={"filled"} placeholder="Filled Input" />
 
