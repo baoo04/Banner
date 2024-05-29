@@ -2,8 +2,61 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 * {
   border: none;
+}
+
+.container-80{
+  @media (min-width: 1900px) {
+    width: 1550px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1650px) and (max-width: 1899px) {
+    width: 1384px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1650px) {
+    width: 1135px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1399px) {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1279px) {
+    padding: 0 20px;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 250px;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    max-height: 250px;
+  }
+  to {
+    max-height: 0;
+  }
+}
+
+.fade-down {
+  animation: fadeDown 0.5s ease-in-out forwards;
+}
+
+.fade-up {
+  animation: fadeUp 0.5s ease-in-out forwards;
 }
 
 @layer utilities {

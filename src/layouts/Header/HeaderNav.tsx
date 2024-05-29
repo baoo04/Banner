@@ -26,21 +26,20 @@ const HeaderNav = ({ menus }: HeaderNavProps) => {
         onClick={() => {
           setIsOpenNavMenu(!isOpenNavMenu);
         }}
-        className="text-primary-600 relative"
+        className="text-primary-600 relative select-none"
       />
+
       <div
         className={cn(
-          "transition-all duration-500 ease-in-out overflow-hidden xl:hidden top-10 absolute z-50",
-          isOpenNavMenu
-            ? "bg-primary-100 left-0 w-full opacity-100 shadow-lg rounded-lg"
-            : "hidden"
+          "transition-all overflow-hidden absolute z-50 shadow-2xl bg-white w-[95%] top-10 mx-auto left-0 right-0 rounded-lg",
+          isOpenNavMenu ? "fade-up" : "fade-down"
         )}
       >
         {menus.map((item, index) => (
           <Link
             key={index}
             href={item.link}
-            className="flex justify-between items-center py-2 px-4 border-b border-dark-200 hover:bg-primary hover:text-white transition-colors duration-300 ease-in-out"
+            className="flex justify-between items-center py-3 px-4 border-b border-dark-200 hover:bg-primary-100 transition-colors duration-300 ease-in-out"
           >
             {item.name}
             {item.icon && <span className="ml-2">{item.icon}</span>}
